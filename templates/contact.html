@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Art Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <header>
+        <h1>Welcome to My Art Gallery</h1>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="home">
+            <h2>Gallery</h2>
+            <div class="images">
+                <img class="slider-image active" src="https://images.joseartgallery.com/8493/conversions/landscape-painting-caravan-saudi-arabia-thumb900.jpg" alt="Painting 1">
+                <img class="slider-image" src="https://saudigazette.com.sa/uploads/images/2021/07/01/1818162.jpeg" alt="Painting 2">
+                <img class="slider-image" src="https://saudigazette.com.sa/uploads/images/2023/01/09/2068033.jpg" alt="Painting 3">
+            </div>
+            <!-- Button to go to the next image -->
+            <button id="nxt-img-btn" onclick="nextImage()">Next Image</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Art Portfolio</p>
+    </footer>
+</body>
+</html>
+
+
+
+

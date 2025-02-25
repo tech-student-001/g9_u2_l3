@@ -1,0 +1,12 @@
+FLASK APP STRUCTURE: 
+/flaskapp
+│-- static/
+│   │-- style.css   	# CSS for styling
+│   │-- script.js    	# JavaScript for interactivity
+│   │-- images/
+│       │-- painting#	# local images for paintings if any
+│-- templates/
+│   │-- index.html   	# Homepage
+│   │-- contact.html 	# Contact page
+│-- app.py           	# Flask backend
+│-- requirements.txt 	# Dependencies
